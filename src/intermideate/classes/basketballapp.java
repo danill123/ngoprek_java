@@ -1,0 +1,18 @@
+package intermideate.classes;
+
+public class basketballapp {
+    public static void main(String[] args) {
+        Basketballplayer kobe = new Basketballplayer("Brian", "black maamba", 1978, "lakers", 83.7, 25.0, 1344);
+        Basketballplayer jordan = new Basketballplayer("Jordan", "MJ", 1978, "lakers", 83.7, 25.0, 1344);
+        Basketballplayer magic = new Basketballplayer("magic", "magic", 1978, "lakers", 83.7, 25.0, 1344);
+        Basketballplayer[] basketballplayers = new Basketballplayer[3];
+        basketballplayers[0] = kobe;
+        basketballplayers[1] = jordan;
+        basketballplayers[2] = magic;
+
+        for (Basketballplayer basketballplayer : basketballplayers) {
+            basketballplayer.freeThrow();
+        }
+
+    }
+}
